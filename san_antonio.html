@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <style>#map_08b63e3300274e4f935e1b0a43090b02 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_08b63e3300274e4f935e1b0a43090b02" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_08b63e3300274e4f935e1b0a43090b02 = L.map(
+        'map_08b63e3300274e4f935e1b0a43090b02', {
+        center: [29.58112385, -98.57656207],
+        zoom: 12,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_5b47f1b528ee43b8ae8fb3eedd975e95 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "subdomains": "abc"
+}).addTo(map_08b63e3300274e4f935e1b0a43090b02);
+    
+
+            var circle_8d72146d39114882999f7e938bc2d600 = L.circle(
+                [29.58112385, -98.57656207],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3186cc",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5000,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_08b63e3300274e4f935e1b0a43090b02);
+            
+    
+        var marker_a0bd6568c7f64ae1a02ef49e39c22cfa = L.marker(
+            [29.58112385, -98.57656207],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_08b63e3300274e4f935e1b0a43090b02);
+        
+    
+
+                var icon_fbab18d8e2e14a319d756768e011b7d7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a0bd6568c7f64ae1a02ef49e39c22cfa.setIcon(icon_fbab18d8e2e14a319d756768e011b7d7);
+            
+    
+            var marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711 = L.markerClusterGroup({});
+            map_08b63e3300274e4f935e1b0a43090b02.addLayer(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+            
+    
+        var marker_b3c97f67856b445f94b1dbfda81c4023 = L.marker(
+            [29.5811238483994, -98.57656206987791],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_3f4991eaff2f4c469af4c6d5b070c34b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_508ac14a55c04751b92a96dcf5e82179 = $('<div id="html_508ac14a55c04751b92a96dcf5e82179" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/19067502?location=Bulverde%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_3f4991eaff2f4c469af4c6d5b070c34b.setContent(html_508ac14a55c04751b92a96dcf5e82179);
+            
+
+            marker_b3c97f67856b445f94b1dbfda81c4023.bindPopup(popup_3f4991eaff2f4c469af4c6d5b070c34b)
+            ;
+
+            
+        
+    
+        marker_b3c97f67856b445f94b1dbfda81c4023.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_6aa3aeffd3464d07b027100d2757ee2f = L.marker(
+            [29.576232261346195, -98.60136903409669],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_ee2a6a2cf7c6434abbd7bd30b4ccc6c8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b8f477484f3a407ab5c23528772d6012 = $('<div id="html_b8f477484f3a407ab5c23528772d6012" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/17679405?location=Bulverde%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_ee2a6a2cf7c6434abbd7bd30b4ccc6c8.setContent(html_b8f477484f3a407ab5c23528772d6012);
+            
+
+            marker_6aa3aeffd3464d07b027100d2757ee2f.bindPopup(popup_ee2a6a2cf7c6434abbd7bd30b4ccc6c8)
+            ;
+
+            
+        
+    
+        marker_6aa3aeffd3464d07b027100d2757ee2f.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_11c7805caa244daaa0cd02389d28cb8f = L.marker(
+            [29.581271797301103, -98.57506763949449],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_057d425e29c8441da52c07a2e1c0a137 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f08c91e5dedf45aa94d44bea2fa191d8 = $('<div id="html_f08c91e5dedf45aa94d44bea2fa191d8" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18749217?location=Bulverde%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_057d425e29c8441da52c07a2e1c0a137.setContent(html_f08c91e5dedf45aa94d44bea2fa191d8);
+            
+
+            marker_11c7805caa244daaa0cd02389d28cb8f.bindPopup(popup_057d425e29c8441da52c07a2e1c0a137)
+            ;
+
+            
+        
+    
+        marker_11c7805caa244daaa0cd02389d28cb8f.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_8070e04502df46f6a5b4a7f391be18f6 = L.marker(
+            [29.578564649586703, -98.57503980069158],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_f38800ec86074967a6a0db942a584c3d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0ba5138dca4d4a888aa13f165e648a32 = $('<div id="html_0ba5138dca4d4a888aa13f165e648a32" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/15103210?location=Bulverde%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_f38800ec86074967a6a0db942a584c3d.setContent(html_0ba5138dca4d4a888aa13f165e648a32);
+            
+
+            marker_8070e04502df46f6a5b4a7f391be18f6.bindPopup(popup_f38800ec86074967a6a0db942a584c3d)
+            ;
+
+            
+        
+    
+        marker_8070e04502df46f6a5b4a7f391be18f6.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_da63844578f847a6add3c588ceb070ba = L.marker(
+            [29.6089473153477, -98.60611624419741],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_8a90d4054e474a8fac2c767ed7ac339c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_71fbdabe53f3408f920e56e6015e634a = $('<div id="html_71fbdabe53f3408f920e56e6015e634a" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18815829?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_8a90d4054e474a8fac2c767ed7ac339c.setContent(html_71fbdabe53f3408f920e56e6015e634a);
+            
+
+            marker_da63844578f847a6add3c588ceb070ba.bindPopup(popup_8a90d4054e474a8fac2c767ed7ac339c)
+            ;
+
+            
+        
+    
+        marker_da63844578f847a6add3c588ceb070ba.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_641b21aefd964884a9052c2f576ead7c = L.marker(
+            [29.5879171938903, -98.58992178428569],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_4c2c6156e0e84921b4eef21e99cad5c0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d25e0fa5f5994afeb4bc3187fd5ea1ff = $('<div id="html_d25e0fa5f5994afeb4bc3187fd5ea1ff" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16741789?location=Bulverde%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_4c2c6156e0e84921b4eef21e99cad5c0.setContent(html_d25e0fa5f5994afeb4bc3187fd5ea1ff);
+            
+
+            marker_641b21aefd964884a9052c2f576ead7c.bindPopup(popup_4c2c6156e0e84921b4eef21e99cad5c0)
+            ;
+
+            
+        
+    
+        marker_641b21aefd964884a9052c2f576ead7c.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_b66a5feeb3a34e13a6812eeb66229f39 = L.marker(
+            [29.5400390111203, -98.57184111125359],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_fb3716e73484463fa8ca3abcdbdf5ae4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_54b7a428d8c0489a9428dbe5e28abaab = $('<div id="html_54b7a428d8c0489a9428dbe5e28abaab" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/15313534?location=Bulverde%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_fb3716e73484463fa8ca3abcdbdf5ae4.setContent(html_54b7a428d8c0489a9428dbe5e28abaab);
+            
+
+            marker_b66a5feeb3a34e13a6812eeb66229f39.bindPopup(popup_fb3716e73484463fa8ca3abcdbdf5ae4)
+            ;
+
+            
+        
+    
+        marker_b66a5feeb3a34e13a6812eeb66229f39.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_2f2af16f816d46eb8e07cc6fcd6f97d6 = L.marker(
+            [29.6103857095195, -98.5963840796764],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_f2c2f9fecba24da19fcc70bb31abb94d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f2e7a9ec3f334968b027394e4e6f5704 = $('<div id="html_f2e7a9ec3f334968b027394e4e6f5704" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/13207987?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_f2c2f9fecba24da19fcc70bb31abb94d.setContent(html_f2e7a9ec3f334968b027394e4e6f5704);
+            
+
+            marker_2f2af16f816d46eb8e07cc6fcd6f97d6.bindPopup(popup_f2c2f9fecba24da19fcc70bb31abb94d)
+            ;
+
+            
+        
+    
+        marker_2f2af16f816d46eb8e07cc6fcd6f97d6.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_f8995a5f63a449ada69332fbf5113240 = L.marker(
+            [29.6112170413422, -98.6084287782627],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_83eb246f3efd4ec882b7febc0bfcf439 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_808f6de7aa8c4a98bf2d944e6d2dd30f = $('<div id="html_808f6de7aa8c4a98bf2d944e6d2dd30f" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18264474?location=Bulverde%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_83eb246f3efd4ec882b7febc0bfcf439.setContent(html_808f6de7aa8c4a98bf2d944e6d2dd30f);
+            
+
+            marker_f8995a5f63a449ada69332fbf5113240.bindPopup(popup_83eb246f3efd4ec882b7febc0bfcf439)
+            ;
+
+            
+        
+    
+        marker_f8995a5f63a449ada69332fbf5113240.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_6b598f57ee9a4b51a7dc21401dd52d5f = L.marker(
+            [29.611713136461603, -98.5940362654016],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_3dc46bc8d63c4f97aca3c249a8372792 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c28823f9b13f46d8bf8b64cd7cd94a5c = $('<div id="html_c28823f9b13f46d8bf8b64cd7cd94a5c" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/5268040?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_3dc46bc8d63c4f97aca3c249a8372792.setContent(html_c28823f9b13f46d8bf8b64cd7cd94a5c);
+            
+
+            marker_6b598f57ee9a4b51a7dc21401dd52d5f.bindPopup(popup_3dc46bc8d63c4f97aca3c249a8372792)
+            ;
+
+            
+        
+    
+        marker_6b598f57ee9a4b51a7dc21401dd52d5f.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_88800f06f13d49be86ef432c9d83efb8 = L.marker(
+            [29.5977064086588, -98.5965934394564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_1a82d2c153ef4f7f93718a28a6712697 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_eb3b1e86b5d6427f8c1c9b6ec5df1f09 = $('<div id="html_eb3b1e86b5d6427f8c1c9b6ec5df1f09" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/10928443?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_1a82d2c153ef4f7f93718a28a6712697.setContent(html_eb3b1e86b5d6427f8c1c9b6ec5df1f09);
+            
+
+            marker_88800f06f13d49be86ef432c9d83efb8.bindPopup(popup_1a82d2c153ef4f7f93718a28a6712697)
+            ;
+
+            
+        
+    
+        marker_88800f06f13d49be86ef432c9d83efb8.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_c3fbfbf3a10945fa8c96b088595f5ee4 = L.marker(
+            [29.584124665230103, -98.61645825446459],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_4c18ca5ffa9a4ebaa6bee800ce18101b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fa6ced9150754630a0666068c776fab5 = $('<div id="html_fa6ced9150754630a0666068c776fab5" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/5746660?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_4c18ca5ffa9a4ebaa6bee800ce18101b.setContent(html_fa6ced9150754630a0666068c776fab5);
+            
+
+            marker_c3fbfbf3a10945fa8c96b088595f5ee4.bindPopup(popup_4c18ca5ffa9a4ebaa6bee800ce18101b)
+            ;
+
+            
+        
+    
+        marker_c3fbfbf3a10945fa8c96b088595f5ee4.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_5729ab2989ad4bce9f26e4b13ebe84ce = L.marker(
+            [29.5782533066592, -98.5995433154867],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_bd603203bbe347c99aeebfe9faf2fa00 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ed6d39a8b4464a3b92f86ddd8dcbc404 = $('<div id="html_ed6d39a8b4464a3b92f86ddd8dcbc404" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/19307042?location=Bulverde%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_bd603203bbe347c99aeebfe9faf2fa00.setContent(html_ed6d39a8b4464a3b92f86ddd8dcbc404);
+            
+
+            marker_5729ab2989ad4bce9f26e4b13ebe84ce.bindPopup(popup_bd603203bbe347c99aeebfe9faf2fa00)
+            ;
+
+            
+        
+    
+        marker_5729ab2989ad4bce9f26e4b13ebe84ce.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_411f196e14ff41c28823c8bdc2ffbcad = L.marker(
+            [29.616877871329603, -98.5998911463406],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_a4f49675c98d428cb860aed79843c2b6 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f9cacfeb93394028a9b0140bb0f26e12 = $('<div id="html_f9cacfeb93394028a9b0140bb0f26e12" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18930884?location=Bulverde%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_a4f49675c98d428cb860aed79843c2b6.setContent(html_f9cacfeb93394028a9b0140bb0f26e12);
+            
+
+            marker_411f196e14ff41c28823c8bdc2ffbcad.bindPopup(popup_a4f49675c98d428cb860aed79843c2b6)
+            ;
+
+            
+        
+    
+        marker_411f196e14ff41c28823c8bdc2ffbcad.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_b1e0c42af71b4d7d8272c7e9542e7fd4 = L.marker(
+            [29.6124886382512, -98.59254265775299],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_3056134b08ab448c8d78fb79d2e8567e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9f990be95a02468badae858793d5c00a = $('<div id="html_9f990be95a02468badae858793d5c00a" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/12988896?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_3056134b08ab448c8d78fb79d2e8567e.setContent(html_9f990be95a02468badae858793d5c00a);
+            
+
+            marker_b1e0c42af71b4d7d8272c7e9542e7fd4.bindPopup(popup_3056134b08ab448c8d78fb79d2e8567e)
+            ;
+
+            
+        
+    
+        marker_b1e0c42af71b4d7d8272c7e9542e7fd4.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_5d48203896d3443a8c53ef580d5d5ccb = L.marker(
+            [29.5499892068548, -98.5643132210845],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_5fa0c60890ae485ea210a17afb93ad0d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_cd5dfd341b3745f396f8afb850039888 = $('<div id="html_cd5dfd341b3745f396f8afb850039888" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18140814?location=Bulverde%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_5fa0c60890ae485ea210a17afb93ad0d.setContent(html_cd5dfd341b3745f396f8afb850039888);
+            
+
+            marker_5d48203896d3443a8c53ef580d5d5ccb.bindPopup(popup_5fa0c60890ae485ea210a17afb93ad0d)
+            ;
+
+            
+        
+    
+        marker_5d48203896d3443a8c53ef580d5d5ccb.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_38e01a4909a449c9a2f444fc8b652fad = L.marker(
+            [29.548550281024397, -98.5797210941695],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_5d6bfa0439744d41aaf389ad6b03df91 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_53f1c86970914e6ea0cbb4a02a0409cf = $('<div id="html_53f1c86970914e6ea0cbb4a02a0409cf" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16212641?location=Bulverde%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_5d6bfa0439744d41aaf389ad6b03df91.setContent(html_53f1c86970914e6ea0cbb4a02a0409cf);
+            
+
+            marker_38e01a4909a449c9a2f444fc8b652fad.bindPopup(popup_5d6bfa0439744d41aaf389ad6b03df91)
+            ;
+
+            
+        
+    
+        marker_38e01a4909a449c9a2f444fc8b652fad.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_ad644ccc5bb34390a4515dc343bba2ea = L.marker(
+            [29.616356578397998, -98.60062547471091],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_4ab4b7676c0b4597b5ffc59b0900b09f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8e720b474d4b4e9f9469c94d663b01f6 = $('<div id="html_8e720b474d4b4e9f9469c94d663b01f6" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18374351?location=Bulverde%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_4ab4b7676c0b4597b5ffc59b0900b09f.setContent(html_8e720b474d4b4e9f9469c94d663b01f6);
+            
+
+            marker_ad644ccc5bb34390a4515dc343bba2ea.bindPopup(popup_4ab4b7676c0b4597b5ffc59b0900b09f)
+            ;
+
+            
+        
+    
+        marker_ad644ccc5bb34390a4515dc343bba2ea.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_2212df22b55946e8b99a51fe14fe1050 = L.marker(
+            [29.614636724569202, -98.59957812150992],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_63fccbef170b4923af3302296f25ddc7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7c21c31185a1415bb76e0e676a915b4a = $('<div id="html_7c21c31185a1415bb76e0e676a915b4a" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18155079?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_63fccbef170b4923af3302296f25ddc7.setContent(html_7c21c31185a1415bb76e0e676a915b4a);
+            
+
+            marker_2212df22b55946e8b99a51fe14fe1050.bindPopup(popup_63fccbef170b4923af3302296f25ddc7)
+            ;
+
+            
+        
+    
+        marker_2212df22b55946e8b99a51fe14fe1050.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_1bd3bb76a0214d1f9091f94ed75e9786 = L.marker(
+            [29.5578417231396, -98.5735612487608],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_4ff5e66d4ad84160a34af95964bd2d00 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_978c0a6ae0c94a39bd82f0cbb524b2e5 = $('<div id="html_978c0a6ae0c94a39bd82f0cbb524b2e5" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/19105819?location=Bulverde%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_4ff5e66d4ad84160a34af95964bd2d00.setContent(html_978c0a6ae0c94a39bd82f0cbb524b2e5);
+            
+
+            marker_1bd3bb76a0214d1f9091f94ed75e9786.bindPopup(popup_4ff5e66d4ad84160a34af95964bd2d00)
+            ;
+
+            
+        
+    
+        marker_1bd3bb76a0214d1f9091f94ed75e9786.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_e0af4d7fc77b40428fe65d6e6a10d415 = L.marker(
+            [29.586985348968703, -98.59544853085319],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_b9723e0a234349fc8baa40182fad3cf7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_60958ccdd40743d59e0f104c5a8d0ddc = $('<div id="html_60958ccdd40743d59e0f104c5a8d0ddc" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16287319?location=Bulverde%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_b9723e0a234349fc8baa40182fad3cf7.setContent(html_60958ccdd40743d59e0f104c5a8d0ddc);
+            
+
+            marker_e0af4d7fc77b40428fe65d6e6a10d415.bindPopup(popup_b9723e0a234349fc8baa40182fad3cf7)
+            ;
+
+            
+        
+    
+        marker_e0af4d7fc77b40428fe65d6e6a10d415.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_4716bc10f7ba4996bb7f40411eb6647b = L.marker(
+            [29.616168895057, -98.5981001290539],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_911a4fc5626e4e67bf467df98db84001 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f53aaa66fcf74adfa3c8627995b4ff06 = $('<div id="html_f53aaa66fcf74adfa3c8627995b4ff06" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/17701375?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_911a4fc5626e4e67bf467df98db84001.setContent(html_f53aaa66fcf74adfa3c8627995b4ff06);
+            
+
+            marker_4716bc10f7ba4996bb7f40411eb6647b.bindPopup(popup_911a4fc5626e4e67bf467df98db84001)
+            ;
+
+            
+        
+    
+        marker_4716bc10f7ba4996bb7f40411eb6647b.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_0d7283be64bd4775b87899985e95abb0 = L.marker(
+            [29.5750854541222, -98.62536252983129],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_3f3ce34d820b468a9940bdda42099bbe = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fd2ffc676d61433ebcd19353cb30dbf5 = $('<div id="html_fd2ffc676d61433ebcd19353cb30dbf5" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/19098926?location=Bulverde%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_3f3ce34d820b468a9940bdda42099bbe.setContent(html_fd2ffc676d61433ebcd19353cb30dbf5);
+            
+
+            marker_0d7283be64bd4775b87899985e95abb0.bindPopup(popup_3f3ce34d820b468a9940bdda42099bbe)
+            ;
+
+            
+        
+    
+        marker_0d7283be64bd4775b87899985e95abb0.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_0dac3f92b8c449c084bfdeb5b51e5848 = L.marker(
+            [29.6103557147754, -98.5947218547067],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_e4147d73c7454203b7de05fdd7df9b83 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_80e4ed69cac44f308bfa26e422fdfadc = $('<div id="html_80e4ed69cac44f308bfa26e422fdfadc" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/1746054?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_e4147d73c7454203b7de05fdd7df9b83.setContent(html_80e4ed69cac44f308bfa26e422fdfadc);
+            
+
+            marker_0dac3f92b8c449c084bfdeb5b51e5848.bindPopup(popup_e4147d73c7454203b7de05fdd7df9b83)
+            ;
+
+            
+        
+    
+        marker_0dac3f92b8c449c084bfdeb5b51e5848.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_1f9c0adcb5a84c84a4bc707f43f48bfe = L.marker(
+            [29.6096938081185, -98.59549821302141],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_efd0e084b7bd48f0ba6ee8d7383a5372 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9ed6e021d4f7497080562d1e308bc83b = $('<div id="html_9ed6e021d4f7497080562d1e308bc83b" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/17072481?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_efd0e084b7bd48f0ba6ee8d7383a5372.setContent(html_9ed6e021d4f7497080562d1e308bc83b);
+            
+
+            marker_1f9c0adcb5a84c84a4bc707f43f48bfe.bindPopup(popup_efd0e084b7bd48f0ba6ee8d7383a5372)
+            ;
+
+            
+        
+    
+        marker_1f9c0adcb5a84c84a4bc707f43f48bfe.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_bcda4293a2b24a76920b3393229b33d2 = L.marker(
+            [29.5599617172747, -98.61786094246669],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_6d0c99f2a23e4e49b1a9b4e9339534c9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9c40bfb41c1447289d105406d2de88ba = $('<div id="html_9c40bfb41c1447289d105406d2de88ba" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/17557297?location=Bulverde%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_6d0c99f2a23e4e49b1a9b4e9339534c9.setContent(html_9c40bfb41c1447289d105406d2de88ba);
+            
+
+            marker_bcda4293a2b24a76920b3393229b33d2.bindPopup(popup_6d0c99f2a23e4e49b1a9b4e9339534c9)
+            ;
+
+            
+        
+    
+        marker_bcda4293a2b24a76920b3393229b33d2.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_12310e3ba53a40dfa3c70f33fdc25975 = L.marker(
+            [29.550202258920496, -98.564895426975],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_7a865d767ca04b94bdd49953c798f21c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_babd516f59ee4248b7d49ed450e91c51 = $('<div id="html_babd516f59ee4248b7d49ed450e91c51" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18618035?location=Bulverde%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_7a865d767ca04b94bdd49953c798f21c.setContent(html_babd516f59ee4248b7d49ed450e91c51);
+            
+
+            marker_12310e3ba53a40dfa3c70f33fdc25975.bindPopup(popup_7a865d767ca04b94bdd49953c798f21c)
+            ;
+
+            
+        
+    
+        marker_12310e3ba53a40dfa3c70f33fdc25975.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_82452569f47740c6b0ae5eff406af0c5 = L.marker(
+            [29.610547108383102, -98.5944059698394],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_3db86366f17b461eb2cc4b13b411afe0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ba47f9d87e0e4fef91490dcbd004d8cb = $('<div id="html_ba47f9d87e0e4fef91490dcbd004d8cb" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/10783113?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_3db86366f17b461eb2cc4b13b411afe0.setContent(html_ba47f9d87e0e4fef91490dcbd004d8cb);
+            
+
+            marker_82452569f47740c6b0ae5eff406af0c5.bindPopup(popup_3db86366f17b461eb2cc4b13b411afe0)
+            ;
+
+            
+        
+    
+        marker_82452569f47740c6b0ae5eff406af0c5.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_50fcee717d994dd8aaacbb2b0a24d7a8 = L.marker(
+            [29.609568065632, -98.5959923515716],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_0a04dbd7bc864d9d95fed23462f8e37a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d792074f4c164b08a20244a11dc73519 = $('<div id="html_d792074f4c164b08a20244a11dc73519" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/10228755?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_0a04dbd7bc864d9d95fed23462f8e37a.setContent(html_d792074f4c164b08a20244a11dc73519);
+            
+
+            marker_50fcee717d994dd8aaacbb2b0a24d7a8.bindPopup(popup_0a04dbd7bc864d9d95fed23462f8e37a)
+            ;
+
+            
+        
+    
+        marker_50fcee717d994dd8aaacbb2b0a24d7a8.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_9ba14317106b4f5683851509e81f9e91 = L.marker(
+            [29.610143583225003, -98.5943521533958],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_1f866289ad6c41c984ea029ba037734d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ef6ed35910a0432d96dc578ef22c53b2 = $('<div id="html_ef6ed35910a0432d96dc578ef22c53b2" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/5133388?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_1f866289ad6c41c984ea029ba037734d.setContent(html_ef6ed35910a0432d96dc578ef22c53b2);
+            
+
+            marker_9ba14317106b4f5683851509e81f9e91.bindPopup(popup_1f866289ad6c41c984ea029ba037734d)
+            ;
+
+            
+        
+    
+        marker_9ba14317106b4f5683851509e81f9e91.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_542cd8b8426a45fdad438297d84bdf0d = L.marker(
+            [29.616877871329603, -98.5998911463406],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_db5f747485784094bc0d480e3e2e6168 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dd49e8d8072b4ebe9e2197a3cd164476 = $('<div id="html_dd49e8d8072b4ebe9e2197a3cd164476" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18930884?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_db5f747485784094bc0d480e3e2e6168.setContent(html_dd49e8d8072b4ebe9e2197a3cd164476);
+            
+
+            marker_542cd8b8426a45fdad438297d84bdf0d.bindPopup(popup_db5f747485784094bc0d480e3e2e6168)
+            ;
+
+            
+        
+    
+        marker_542cd8b8426a45fdad438297d84bdf0d.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_9d823fb9a44842bd9cef1c1c533c9082 = L.marker(
+            [29.6103797978509, -98.6061345394754],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_e68594ac894a4bc5ae46550b621b9b82 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_59fc1a0e1bdb47bfae6701f8dfd24d0d = $('<div id="html_59fc1a0e1bdb47bfae6701f8dfd24d0d" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/15395683?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_e68594ac894a4bc5ae46550b621b9b82.setContent(html_59fc1a0e1bdb47bfae6701f8dfd24d0d);
+            
+
+            marker_9d823fb9a44842bd9cef1c1c533c9082.bindPopup(popup_e68594ac894a4bc5ae46550b621b9b82)
+            ;
+
+            
+        
+    
+        marker_9d823fb9a44842bd9cef1c1c533c9082.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_4f1c3a6bba6749df96baf82116860ea0 = L.marker(
+            [29.6100017001682, -98.5938773131664],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_f432074d13474e9ea91621c2dc3cca67 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2329810ffb74427cab1777153c6b8dd0 = $('<div id="html_2329810ffb74427cab1777153c6b8dd0" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/6798551?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_f432074d13474e9ea91621c2dc3cca67.setContent(html_2329810ffb74427cab1777153c6b8dd0);
+            
+
+            marker_4f1c3a6bba6749df96baf82116860ea0.bindPopup(popup_f432074d13474e9ea91621c2dc3cca67)
+            ;
+
+            
+        
+    
+        marker_4f1c3a6bba6749df96baf82116860ea0.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_5117b7a9d1f940238326c0c2d55c7dd4 = L.marker(
+            [29.610497928022298, -98.59563047691151],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_c5772407322a45069ae2cee7b7632915 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c47712e13793454485ecd2b06c9cac55 = $('<div id="html_c47712e13793454485ecd2b06c9cac55" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18550745?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_c5772407322a45069ae2cee7b7632915.setContent(html_c47712e13793454485ecd2b06c9cac55);
+            
+
+            marker_5117b7a9d1f940238326c0c2d55c7dd4.bindPopup(popup_c5772407322a45069ae2cee7b7632915)
+            ;
+
+            
+        
+    
+        marker_5117b7a9d1f940238326c0c2d55c7dd4.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_e08851a4fdd14dfe825084f434b849ca = L.marker(
+            [29.6112170413422, -98.6084287782627],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_b1f272aaca9c47278beadbe205bffbf0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_be81967a60ea428cbdb681ff3371afca = $('<div id="html_be81967a60ea428cbdb681ff3371afca" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18264474?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_b1f272aaca9c47278beadbe205bffbf0.setContent(html_be81967a60ea428cbdb681ff3371afca);
+            
+
+            marker_e08851a4fdd14dfe825084f434b849ca.bindPopup(popup_b1f272aaca9c47278beadbe205bffbf0)
+            ;
+
+            
+        
+    
+        marker_e08851a4fdd14dfe825084f434b849ca.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_fc3adf75cd7147aaa3b94ea7fff4778e = L.marker(
+            [29.567839360328602, -98.5653763194824],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_68829998945140d7a37df5d0dd9edb7d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e111cacf26844d65bbc6145f4fa5cb85 = $('<div id="html_e111cacf26844d65bbc6145f4fa5cb85" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18493027?location=Bulverde%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_68829998945140d7a37df5d0dd9edb7d.setContent(html_e111cacf26844d65bbc6145f4fa5cb85);
+            
+
+            marker_fc3adf75cd7147aaa3b94ea7fff4778e.bindPopup(popup_68829998945140d7a37df5d0dd9edb7d)
+            ;
+
+            
+        
+    
+        marker_fc3adf75cd7147aaa3b94ea7fff4778e.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_fe12c4bbbfef4f38b374355f45b1b391 = L.marker(
+            [29.613255655257603, -98.5936035002091],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_71dd213ca82447989ba1abbf8220069c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ca946df2014d4bb2a4a0a4a0d31027c2 = $('<div id="html_ca946df2014d4bb2a4a0a4a0d31027c2" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/10247599?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_71dd213ca82447989ba1abbf8220069c.setContent(html_ca946df2014d4bb2a4a0a4a0d31027c2);
+            
+
+            marker_fe12c4bbbfef4f38b374355f45b1b391.bindPopup(popup_71dd213ca82447989ba1abbf8220069c)
+            ;
+
+            
+        
+    
+        marker_fe12c4bbbfef4f38b374355f45b1b391.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_1935dfb1fbfa496c9c2973e1ee2f3ea7 = L.marker(
+            [29.6068855170646, -98.61295849523],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_9a701d5ff627404fbe3ce85f8470b7ae = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f71afbabf9064bfc9a143da36e4f38b8 = $('<div id="html_f71afbabf9064bfc9a143da36e4f38b8" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/19144096?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_9a701d5ff627404fbe3ce85f8470b7ae.setContent(html_f71afbabf9064bfc9a143da36e4f38b8);
+            
+
+            marker_1935dfb1fbfa496c9c2973e1ee2f3ea7.bindPopup(popup_9a701d5ff627404fbe3ce85f8470b7ae)
+            ;
+
+            
+        
+    
+        marker_1935dfb1fbfa496c9c2973e1ee2f3ea7.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_569e29681cc04aef90c04bb356981ee6 = L.marker(
+            [29.6124958307554, -98.5951764060199],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_d6b23a55d2e84c7ba5f86815a3362e11 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2d4d0fd3c5e2426aa76d4af0c14e08fe = $('<div id="html_2d4d0fd3c5e2426aa76d4af0c14e08fe" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/11237907?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_d6b23a55d2e84c7ba5f86815a3362e11.setContent(html_2d4d0fd3c5e2426aa76d4af0c14e08fe);
+            
+
+            marker_569e29681cc04aef90c04bb356981ee6.bindPopup(popup_d6b23a55d2e84c7ba5f86815a3362e11)
+            ;
+
+            
+        
+    
+        marker_569e29681cc04aef90c04bb356981ee6.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_60d469c145f74ec5943607996f3fe2b2 = L.marker(
+            [29.6096133055618, -98.5953000283305],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_ce8956c7be7a4a219fe0fb2c1a7c1728 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_414a8aceb24d4c03acfafdb9282c32ee = $('<div id="html_414a8aceb24d4c03acfafdb9282c32ee" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/17842655?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_ce8956c7be7a4a219fe0fb2c1a7c1728.setContent(html_414a8aceb24d4c03acfafdb9282c32ee);
+            
+
+            marker_60d469c145f74ec5943607996f3fe2b2.bindPopup(popup_ce8956c7be7a4a219fe0fb2c1a7c1728)
+            ;
+
+            
+        
+    
+        marker_60d469c145f74ec5943607996f3fe2b2.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_b211e5b730ab42698e88aacf92b76057 = L.marker(
+            [29.6128485299814, -98.5983851452657],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_2aed2c6ec98c4b63887f3fab027b2249 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_cee6314fdac042eda759081747a7adb4 = $('<div id="html_cee6314fdac042eda759081747a7adb4" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/19197507?location=Bulverde%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_2aed2c6ec98c4b63887f3fab027b2249.setContent(html_cee6314fdac042eda759081747a7adb4);
+            
+
+            marker_b211e5b730ab42698e88aacf92b76057.bindPopup(popup_2aed2c6ec98c4b63887f3fab027b2249)
+            ;
+
+            
+        
+    
+        marker_b211e5b730ab42698e88aacf92b76057.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_5dcd4e5b07d24ff4983bef73328bc2e3 = L.marker(
+            [29.6116168628728, -98.5448764843348],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_f39ff1b8be9b43438d7fb6d63de92ce9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e60c413b629c40a5a6f371875ca38b8f = $('<div id="html_e60c413b629c40a5a6f371875ca38b8f" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16206425?location=Bulverde%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_f39ff1b8be9b43438d7fb6d63de92ce9.setContent(html_e60c413b629c40a5a6f371875ca38b8f);
+            
+
+            marker_5dcd4e5b07d24ff4983bef73328bc2e3.bindPopup(popup_f39ff1b8be9b43438d7fb6d63de92ce9)
+            ;
+
+            
+        
+    
+        marker_5dcd4e5b07d24ff4983bef73328bc2e3.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_111ddf0b57c8483d83f751d1b137b408 = L.marker(
+            [29.611482391623696, -98.5931456357204],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_5846593314d54aa5ac49598220b17247 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_36b745252dbc47a4b7795f7a57e0a4c0 = $('<div id="html_36b745252dbc47a4b7795f7a57e0a4c0" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/4183142?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_5846593314d54aa5ac49598220b17247.setContent(html_36b745252dbc47a4b7795f7a57e0a4c0);
+            
+
+            marker_111ddf0b57c8483d83f751d1b137b408.bindPopup(popup_5846593314d54aa5ac49598220b17247)
+            ;
+
+            
+        
+    
+        marker_111ddf0b57c8483d83f751d1b137b408.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_2b2c0317eaab413bae9050697e25529a = L.marker(
+            [29.609768773763104, -98.5962419974466],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_b6c65734e3d648caab43975516cb0788 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_08a91f2b899749a28c98c32ba51d04f9 = $('<div id="html_08a91f2b899749a28c98c32ba51d04f9" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/13020284?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_b6c65734e3d648caab43975516cb0788.setContent(html_08a91f2b899749a28c98c32ba51d04f9);
+            
+
+            marker_2b2c0317eaab413bae9050697e25529a.bindPopup(popup_b6c65734e3d648caab43975516cb0788)
+            ;
+
+            
+        
+    
+        marker_2b2c0317eaab413bae9050697e25529a.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_fffbc46145f04d96bcdc45b6127f68d0 = L.marker(
+            [29.616356578397998, -98.60062547471091],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_cf0ab23bc7e54bd99f47dcd58b8b35c3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ff2ef707f080481291aba3c9fcf1a628 = $('<div id="html_ff2ef707f080481291aba3c9fcf1a628" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18374351?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_cf0ab23bc7e54bd99f47dcd58b8b35c3.setContent(html_ff2ef707f080481291aba3c9fcf1a628);
+            
+
+            marker_fffbc46145f04d96bcdc45b6127f68d0.bindPopup(popup_cf0ab23bc7e54bd99f47dcd58b8b35c3)
+            ;
+
+            
+        
+    
+        marker_fffbc46145f04d96bcdc45b6127f68d0.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_39bb38d0dbdc460885c8bdbdf22f6d6d = L.marker(
+            [29.610242735562803, -98.5949360176265],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_d026d9d7d4b645faa87843a6e693252a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dfd88835fbfe4572801ba5f2ab62637c = $('<div id="html_dfd88835fbfe4572801ba5f2ab62637c" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16040644?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_d026d9d7d4b645faa87843a6e693252a.setContent(html_dfd88835fbfe4572801ba5f2ab62637c);
+            
+
+            marker_39bb38d0dbdc460885c8bdbdf22f6d6d.bindPopup(popup_d026d9d7d4b645faa87843a6e693252a)
+            ;
+
+            
+        
+    
+        marker_39bb38d0dbdc460885c8bdbdf22f6d6d.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_beb8ece9707248cd95c7e7a2c4defac3 = L.marker(
+            [29.599376739113804, -98.56511337322809],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_1210712e363c40b1a68c08a27c3ec204 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e37bb0f00bbb4620b65bd3506a227f8f = $('<div id="html_e37bb0f00bbb4620b65bd3506a227f8f" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/11496986?location=Bulverde%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_1210712e363c40b1a68c08a27c3ec204.setContent(html_e37bb0f00bbb4620b65bd3506a227f8f);
+            
+
+            marker_beb8ece9707248cd95c7e7a2c4defac3.bindPopup(popup_1210712e363c40b1a68c08a27c3ec204)
+            ;
+
+            
+        
+    
+        marker_beb8ece9707248cd95c7e7a2c4defac3.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_7458103ff27f447a964e9de01862ed43 = L.marker(
+            [29.6105832987825, -98.59438912795808],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_2a43bd5220e24e65bd92a23d058f63f1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9aae65b7f446487b893a3484f2a987a5 = $('<div id="html_9aae65b7f446487b893a3484f2a987a5" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/5036358?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_2a43bd5220e24e65bd92a23d058f63f1.setContent(html_9aae65b7f446487b893a3484f2a987a5);
+            
+
+            marker_7458103ff27f447a964e9de01862ed43.bindPopup(popup_2a43bd5220e24e65bd92a23d058f63f1)
+            ;
+
+            
+        
+    
+        marker_7458103ff27f447a964e9de01862ed43.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_fc8a4d6d7d1c4013a59afe3ff76f46c0 = L.marker(
+            [29.5630127230271, -98.6119310852632],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_41f6a2e435ec4ea6bafc75626df52245 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c0b31ec49c9040e5a8c8d5682e53f58a = $('<div id="html_c0b31ec49c9040e5a8c8d5682e53f58a" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/17810482?location=Bulverde%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_41f6a2e435ec4ea6bafc75626df52245.setContent(html_c0b31ec49c9040e5a8c8d5682e53f58a);
+            
+
+            marker_fc8a4d6d7d1c4013a59afe3ff76f46c0.bindPopup(popup_41f6a2e435ec4ea6bafc75626df52245)
+            ;
+
+            
+        
+    
+        marker_fc8a4d6d7d1c4013a59afe3ff76f46c0.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_3909f7bb773c4595ac313dc601298eab = L.marker(
+            [29.6103797978509, -98.6061345394754],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_17a75775f57b4662b5865b4acb1e97d4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2fb7ee16320d494795ffaad7a31edfec = $('<div id="html_2fb7ee16320d494795ffaad7a31edfec" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/15395683?location=Bulverde%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_17a75775f57b4662b5865b4acb1e97d4.setContent(html_2fb7ee16320d494795ffaad7a31edfec);
+            
+
+            marker_3909f7bb773c4595ac313dc601298eab.bindPopup(popup_17a75775f57b4662b5865b4acb1e97d4)
+            ;
+
+            
+        
+    
+        marker_3909f7bb773c4595ac313dc601298eab.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_8003ec9de7cd484eb0c42b22b4ee7eb2 = L.marker(
+            [29.5490213475362, -98.57343328148909],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_ae0333d7e8454fbe88a8a40d862d2a4a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c26450258c2c43e3a382233ef9d8805a = $('<div id="html_c26450258c2c43e3a382233ef9d8805a" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18581598?location=Bulverde%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_ae0333d7e8454fbe88a8a40d862d2a4a.setContent(html_c26450258c2c43e3a382233ef9d8805a);
+            
+
+            marker_8003ec9de7cd484eb0c42b22b4ee7eb2.bindPopup(popup_ae0333d7e8454fbe88a8a40d862d2a4a)
+            ;
+
+            
+        
+    
+        marker_8003ec9de7cd484eb0c42b22b4ee7eb2.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_c903734833e04f07ae4d07d9ed8a6044 = L.marker(
+            [29.6111383065737, -98.6065315569877],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_dfe1fe804f86415a80a0151604940a00 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_834c70cc29c143a396fd1172d39f9cd1 = $('<div id="html_834c70cc29c143a396fd1172d39f9cd1" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/17768979?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_dfe1fe804f86415a80a0151604940a00.setContent(html_834c70cc29c143a396fd1172d39f9cd1);
+            
+
+            marker_c903734833e04f07ae4d07d9ed8a6044.bindPopup(popup_dfe1fe804f86415a80a0151604940a00)
+            ;
+
+            
+        
+    
+        marker_c903734833e04f07ae4d07d9ed8a6044.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_7de5bf7ffaf442649929247e6c083cff = L.marker(
+            [29.609715491434198, -98.60689432402759],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_5376652571244138a139cf285979c4f1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1dbcebcb454243469b2d36dda07e0ca4 = $('<div id="html_1dbcebcb454243469b2d36dda07e0ca4" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/15238360?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_5376652571244138a139cf285979c4f1.setContent(html_1dbcebcb454243469b2d36dda07e0ca4);
+            
+
+            marker_7de5bf7ffaf442649929247e6c083cff.bindPopup(popup_5376652571244138a139cf285979c4f1)
+            ;
+
+            
+        
+    
+        marker_7de5bf7ffaf442649929247e6c083cff.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_4477f25e39774188af651180f4987d0c = L.marker(
+            [29.610949707803396, -98.6086802095343],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_3a483a3e928d42faa14a60fc9a2dee93 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_af8e36173d3a414c92ff68e43fdb4230 = $('<div id="html_af8e36173d3a414c92ff68e43fdb4230" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/15675722?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_3a483a3e928d42faa14a60fc9a2dee93.setContent(html_af8e36173d3a414c92ff68e43fdb4230);
+            
+
+            marker_4477f25e39774188af651180f4987d0c.bindPopup(popup_3a483a3e928d42faa14a60fc9a2dee93)
+            ;
+
+            
+        
+    
+        marker_4477f25e39774188af651180f4987d0c.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_a0a806f41faf43a5a99fffbaf4340714 = L.marker(
+            [29.6128485299814, -98.5983851452657],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_8a647a771d0d4a5c92f15e4eac9f2711);
+        
+    
+            var popup_1bd3052f18a7417da196b0c45fa04cff = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a44c832f34de455fa2e0e436f994a8d0 = $('<div id="html_a44c832f34de455fa2e0e436f994a8d0" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/19197507?location=Boerne%2C%20TX"target="_blank"> [Click the url for more information] </a></div>')[0];
+                popup_1bd3052f18a7417da196b0c45fa04cff.setContent(html_a44c832f34de455fa2e0e436f994a8d0);
+            
+
+            marker_a0a806f41faf43a5a99fffbaf4340714.bindPopup(popup_1bd3052f18a7417da196b0c45fa04cff)
+            ;
+
+            
+        
+    
+        marker_a0a806f41faf43a5a99fffbaf4340714.bindTooltip(
+            '<div>'
+            + 'Click here' + '</div>',
+            {"sticky": true}
+        );
+        
+</script>
