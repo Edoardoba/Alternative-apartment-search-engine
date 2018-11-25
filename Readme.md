@@ -1,16 +1,18 @@
 
 # Homework 3 - Group 1
 
-![alt text](https://www.3ders.org/images2016/airbnb-partners-matterport-launch-3d-virtual-tour-pilot-project-4.jpg)
 
+<p align="center">
+  <img width="460" height="300" src="https://www.3ders.org/images2016/airbnb-partners-matterport-launch-3d-virtual-tour-pilot-project-4.jpg">
+</p>
 
 
 This repository contains the results of the __Homework 3__ of Algorithmic Methods of Data Mining.
 The collaborators of this homework were __Basso Mattias__, __Cantagallo Edoardo__ and __Machani Sreenivasalu Lohith__ .
 
 ### Data 
-The databases used in this homework can be found at the _following link_:
-https://www.kaggle.com/PromptCloudHQ/airbnb-property-data-from-texas . 
+The databases used in this homework can be found [here](https://www.kaggle.com/PromptCloudHQ/airbnb-property-data-from-texas ).
+
 It contains several informations about insertions of houses and apartments on Airbnb platform, all the building are located in Texas - US. 
 
 ## A brief introduction
