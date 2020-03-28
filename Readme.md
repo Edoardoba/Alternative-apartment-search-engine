@@ -1,6 +1,4 @@
 
-# Homework 3 - Group 1
-
 
 <p align="center">
   <img width="460" height="300" src="https://c.pxhere.com/images/ce/79/2483ec5d2be8e7b4ad6db3461eae-1584873.jpg!d">
