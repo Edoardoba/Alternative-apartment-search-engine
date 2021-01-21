@@ -4,10 +4,6 @@
   <img width="460" height="300" src="https://c.pxhere.com/images/ce/79/2483ec5d2be8e7b4ad6db3461eae-1584873.jpg!d">
 </p>
 
-
-This repository contains the results of the __Homework 3__ of Algorithmic Methods of Data Mining.
-The collaborators of this homework were __Basso Mattias__, __Cantagallo Edoardo__ and __Machani Sreenivasalu Lohith__ .
-
 ### Data 
 The databases used in this homework can be found [here](https://www.kaggle.com/PromptCloudHQ/airbnb-property-data-from-texas ).
 
